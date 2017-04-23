@@ -6,13 +6,13 @@ Translations will be provided with `.po` files (an empty one will be generated f
 [More info on .po format](http://pology.nedohodnik.net/doc/user/en_US/ch-poformat.html)
 
 ## Usage
-1. Install babel as global, and ltag plugin as a development dependency:
+Install babel as global, and ltag plugin as a development dependency:
 ```
 npm install -g babel-cli
 npm install --save-dev babel-plugin-ltag
 ```
 
-2. Create a `.babelrc` file:
+Create a `.babelrc` file:
 ```javascript
 {
   "plugins": [
@@ -24,13 +24,13 @@ npm install --save-dev babel-plugin-ltag
 }
 ```
 
-3. Inside your application use ltag:
+Inside your application use ltag:
 ```javascript
 console.log(l`Hi dear, ${username}`);
 console.log(l('context')`Another message`);
 ```
 
-4. Run babel over your code:
+Run babel over your code:
 ```
 babel test.js
 ```
@@ -51,7 +51,7 @@ msgid "Another message"
 msgstr ""
 ```
 
-5. Copy generated `.pot` file to a `.po` file and translate strings inside it. Run babel again and you'll have transformed code.
+Copy generated `.pot` file to a `.po` file and translate strings inside it. Run babel again and you'll have transformed code.
 
 ## TODO
 * Plural Forms 
