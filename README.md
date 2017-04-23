@@ -17,8 +17,11 @@ Create a `.babelrc` file:
 {
   "plugins": [
     ["babel-plugin-ltag", {
-      "pot": "file.pot",  // pristine po file, all l-tagged templates inside source are written here
-      "po": "file.po"    // actual po file to use for translation
+      // pristine po file, all l-tagged templates inside source are written here
+      "pot": "file.pot",
+
+      // actual po file to use for translation
+      "po": "file.po"
     }]
   ]
 }
