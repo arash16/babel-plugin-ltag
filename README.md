@@ -27,7 +27,21 @@ console.log(l('context')`Another message`);
 ```
 
 4. Run babel over your code:
-```babel code.js```
+  ```babel code.js```
+  `.pot` file will be generated, and with subsequent executions will be updated.
+```po
+msgid ""
+msgstr "Content-Type: text/plain;\n"
 
-5. `.pot` file will be generated, and with later executions of babel will be updated, copy it over `.po` file, add translations and rerun babel.
+#: test.js:1
+#, kde-format
+msgid "Hi dear, %0"
+msgstr ""
 
+#: test.js:2
+msgctxt "context"
+msgid "Another message"
+msgstr ""
+```
+
+5. Copy generated `.pot` file to a `.po` file and translates strings inside it. Run babel again and you'll have transformed code.
