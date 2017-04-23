@@ -2,9 +2,7 @@ const fs = require('fs');
 const po = require("gettext-parser").po;
 
 
-export default function (babel) {
-	const { types: t} = babel;
-
+export default function ({ types: t }) {
 	let reHasParams = /%\d+/g;
 	var pots = {};
 	function addToPot(file, str, ctx, ref) {
