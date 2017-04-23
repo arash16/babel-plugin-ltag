@@ -1,6 +1,6 @@
 {
   "name": "babel-plugin-ltag",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "a babel-pluging to transform l-template tags.",
   "main": "lib/index.js",
   "scripts": {

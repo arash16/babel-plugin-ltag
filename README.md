@@ -1,5 +1,5 @@
 # ltag
-ltag is a babel-pluging for client-side javascript localization using templates.
+ltag is a [babel](https://babeljs.io/) pluging for client-side javascript localization using templates.
 You can tag your template strings with `l` and afterwards you will be able to generate different versions of the same code, for different languages.
 
 Translations will be provided with `.po` files (an empty one will be generated for you).
