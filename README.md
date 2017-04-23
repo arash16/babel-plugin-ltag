@@ -11,12 +11,12 @@ npm install --save-dev babel-plugin-ltag
 2. Create a `.babelrc` file:
 ```javascript
 {
-	"plugins": [
-		["babel-plugin-ltag", {
-			"pot": "file.pot",	// pristine po file, all l-tagged templates inside source are written here
-			"po": "file.po"		// actual po file to use for translation
-		}]
-	]
+  "plugins": [
+    ["babel-plugin-ltag", {
+      "pot": "file.pot",  // pristine po file, all l-tagged templates inside source are written here
+      "po": "file.po"    // actual po file to use for translation
+    }]
+  ]
 }
 ```
 
