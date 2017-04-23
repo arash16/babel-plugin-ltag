@@ -1,5 +1,8 @@
 # ltag
-ltag is a babel-pluging for localization, transforms templates tagged l.
+ltag is a babel-pluging for client-side javascript localization using templates.
+You can tag your template strings with `l` and afterwards you will be able to generate different versions of the same code, for different languages.
+Translations will be provided with `.po` files (an empty one will be generated for you).
+[More info on .po format](http://pology.nedohodnik.net/doc/user/en_US/ch-poformat.html)
 
 ## Usage
 1. Install babel as global, and ltag plugin as a development dependency:
