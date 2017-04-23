@@ -45,3 +45,8 @@ msgstr ""
 ```
 
 5. Copy generated `.pot` file to a `.po` file and translate strings inside it. Run babel again and you'll have transformed code.
+
+## TODO
+* Plural Forms 
+* TRANSLATOR comments extraction
+
