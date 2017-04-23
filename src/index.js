@@ -1,6 +1,5 @@
-var fs = require('fs');
-var PO = require('pofile');
-var gettextParser = require("gettext-parser");
+const fs = require('fs');
+const po = require("gettext-parser").po;
 
 
 export default function (babel) {
@@ -12,7 +11,7 @@ export default function (babel) {
 		if (!file) return;
 
 		if (!pots[file] && fs.existsSync(file))
-			pots[file] = gettextParser.po.parse(fs.readFileSync(file, 'utf8'));
+			pots[file] = po.parse(fs.readFileSync(file, 'utf8'));
 
 		let pot = pots[file] = pots[file] || {},
 			tran = pot.translations = pot.translations || {},
@@ -42,8 +41,7 @@ export default function (babel) {
 
 	function savePotFiles() {
 		for (let file in pots) {
-			console.log(pots[file]);
-			var data = gettextParser.po.compile(pots[file]);
+			var data = po.compile(pots[file]);
 			fs.writeFileSync(file, data);
 		}
 	}
@@ -54,7 +52,7 @@ export default function (babel) {
 		
 		if (!poFiles[file]) {
 			if (!fs.existsSync(file)) return;
-			poFiles[file] = gettextParser.po.parse(fs.readFileSync(file, 'utf8'));
+			poFiles[file] = po.parse(fs.readFileSync(file, 'utf8'));
 		}
 
 		let tran = poFiles[file].translations,
@@ -77,7 +75,6 @@ export default function (babel) {
 		// save to pristine po-file
 		if (!ctx) ctx = '';
 		addToPot(opts.pot, str, ctx, ref);
-
 		return readPoFile(opts.po, str, ctx) || str;
 	}
 
