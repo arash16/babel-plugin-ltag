@@ -34,7 +34,7 @@ babel test.js
 
 ```po
 msgid ""
-msgstr "Content-Type: text/plain;\n"
+msgstr "Content-Type: text/plain;utf-8\n"
 
 #: test.js:1
 #, kde-format
