@@ -27,8 +27,9 @@ console.log(l('context')`Another message`);
 ```
 
 4. Run babel over your code:
-  ```babel test.js```
-  `.pot` file will be generated, and with subsequent executions will be updated.
+```babel test.js```
+`.pot` file will be generated, and with subsequent executions it will be updated.
+
 ```po
 msgid ""
 msgstr "Content-Type: text/plain;\n"
