@@ -12,7 +12,7 @@ npm install -g babel-cli
 npm install --save-dev babel-plugin-ltag
 ```
 
-Create a `.babelrc` file:
+Create a file named [.babelrc](http://babeljs.io/docs/usage/babelrc/) inside your project's root:
 ```javascript
 {
   "plugins": [

@@ -106,8 +106,7 @@ export default function ({ types: t }) {
 				else if (!t.isIdentifier(node.tag, {name:'l'})) return;
 
 				const { quasis, expressions: exps } = node.quasi;
-				const ref = path.hub.file.opts.filename + ':' + node.loc.start.line;
-
+				const ref = node.loc.filename || (path.hub.file.opts.filename + ':' + node.loc.start.line);
 
 				// #, kde-format
 				let srcStr = encode(quasis[0].value.cooked);
