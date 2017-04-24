@@ -3,7 +3,7 @@ ltag is a [babel](https://babeljs.io/) pluging for client-side javascript locali
 You can tag your template strings with `l` and afterwards you will be able to generate different versions of the same code, for different languages.
 
 Translations will be provided with `.po` files (an empty one will be generated for you).
-[More info on .po format](http://pology.nedohodnik.net/doc/user/en_US/ch-poformat.html)
+[More on .po format](http://pology.nedohodnik.net/doc/user/en_US/ch-poformat.html)
 
 ## Usage
 Install babel as global, and ltag plugin as a development dependency:
@@ -41,7 +41,7 @@ babel test.js
 
 ```po
 msgid ""
-msgstr "Content-Type: text/plain;utf-8\n"
+msgstr "Content-Type: text/plain; charset=utf-8"
 
 #: test.js:1
 #, kde-format
@@ -54,7 +54,7 @@ msgid "Another message"
 msgstr ""
 ```
 
-Copy generated `.pot` file to a `.po` file and translate strings inside it. Run babel again and you'll have transformed code.
+Copy generated `.pot` file to a `.po` file and translate strings inside it. Run babel again and you'll have a transformed code.
 
 ## TODO
 * Plural Forms 
