@@ -1,10 +1,10 @@
 {
   "name": "babel-plugin-ltag",
-  "version": "1.0.12",
-  "description": "a babel-pluging to transform l-template tags.",
+  "version": "1.0.13",
+  "description": "a babel-plugin to transform l-template tags.",
   "main": "lib/index.js",
   "scripts": {
-    "compile": "babel src/index.js -o lib/index.js"
+    "build": "babel src/index.js -o lib/index.js"
   },
   "repository": {
     "type": "git",
@@ -17,7 +17,7 @@
     "localization",
     "translation"
   ],
-  "author": "Arash Shakery <arash.shakery@gmail.com>",
+  "author": "Arash Shakery <arash.shakery@gmail.com> (arash16.com)",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/arash16/ltag/issues"
